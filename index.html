@@ -4,34 +4,110 @@
     <head>
         <style>
             .topnav {
-                background-color: black
+                background-color: beige;
+                padding: 0;
+                border: none;
+                text-align: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%
+                
             }
 
-            .topnav a {
-                text-align: center;
-                color: white;
-                text-decoration: none
+            .dropdown {
+                position: absolute;
+                display: inline-block;
+                top: 0;
+                left: 0
             }
+
+            .dropbtn {
+                padding: 25px 15px;
+                cursor: pointer;
+                border: none;
+                width: 200px;
+                display: inline-block
+            }
+
+            .sidenav-links {
+                display: none;
+                position: absolute;
+                width: 200px
+            }
+
+            .sidenav-links a {
+                display: block;
+                color: black;
+                padding: 25px 15px
+            }
+
+            .sidenav-links a:hover {background-color: yellow}
+
+            .dropdown:hover .sidenav-links {display: block}
+            
+            #title {
+                padding: 25px 15px;
+                text-align: center
+            }
+
+            .home-page-text {
+                display: flex;
+                width: 500px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                border: 3px solid black;
+                flex-direction: column;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -100px;
+                margin-left: -250px
+            }
+
+            #home-page-title {
+                width: 300px;
+                border: 3px solid black;
+                margin: 3px
+            }
+
+            #home-page-subtitle-1 {
+                width: 300px;
+                border: 3px solid black;
+                margin: 3px
+            }
+
+            #home-page-subtitle-2 {
+                width: 300px;
+                border: 3px solid black;
+                margin: 3px
+            }
+
         </style>
 
         <title>roge-l.github.io</title>
     </head>
 
-    <body>
+    <body style='background-color:dimgrey'>
         <div class='topnav'>
-            <a href='#Current Page'>Current Page</a>
-            <a href='#Roger Lam'>Roger Lam</a>
+            <div class='dropdown'>
+                <button class='dropbtn' href='#Current Page'>Current Page</button>
+                <div class='sidenav-links'>
+                    <a href='#Profile'>Profile</a>
+                    <a href='#Portfolio'>Portfolio</a>
+                </div>
+            </div>
+            <div id='title'>
+                <a href='#Roger Lam'>Roger Lam</a>
+            </div>
         </div>
 
-
-        <h1>Roger Lam</h1>
-        <h3 style='text-align:center'>Student at the University of Toronto</h3>
-        <h4 style='text-align:center'>Computer Science, Statistics, and Economics</h4>
-
-        <h2>Home</h2>
-        <h2>About</h2>
-        <h2>Portfolio</h2>
-        <h2>Contact</h2>
+        <div class='home-page-text'>
+            <h1 id='home-page-title'>Roger Lam</h1>
+            <h3 id='home-page-subtitle-1'>Student at the University of Toronto</h3>
+            <h4 id='home-page-subtitle-2'>Computer Science, Statistics, and Economics</h4>
+        </div>
     </body>
 
 </html>
