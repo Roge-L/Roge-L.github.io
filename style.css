@@ -1,4 +1,8 @@
-.top-side-nav {
+body {
+    background-color: dodgerblue;
+}
+
+.topnav-foundation {
     border: none;
     position: absolute;
     top: 0;
@@ -12,13 +16,14 @@
     text-align: center;
 }
 
-.dropbtn {
+#dropbtn {
     background-color: lightblue;
     padding: 30px 95px;
     position: absolute;
     display: inline-block;
     top: 0;
-    left: 0
+    left: 0;
+    width: 100px
 }
 
 #title {
@@ -36,7 +41,11 @@
     position: absolute;
     width: 275px;
     left: 0;
-    top: 80px
+    top: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 800ms;
+    z-index: -9;
 }
 
 #sidenav-links ul {
@@ -44,16 +53,20 @@
     padding: 0;
     text-align: center;
     margin: 0;
+    position: absolute;
+    top: 80px;
+    left: 0
 }
 
 #sidenav-links li {
-    padding: 10px
+    padding: 10px 0px
 }
 
 #sidenav-links a {
     background-color: darkorchid;
-    padding: 10px 60px;
-    display: inline-block
+    padding: 10px 0;
+    display: inline-block;
+    width: 275px
 }
 
 .home-page-text {
@@ -67,7 +80,10 @@
     position: absolute;
     top: 40%;
     left: 50%;
-    margin-left: -500px
+    margin-left: -500px;
+    z-index: -10;
+    transform: translateX(0);
+    transition: transform 800ms;
 }
 
 #home-page-title {
