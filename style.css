@@ -1,43 +1,25 @@
-.topnav {
-    background-color: beige;
-    padding: 0;
+.top-side-nav {
     border: none;
-    text-align: center;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%
 }
 
-.dropdown {
+#topnav {
+    background-color: beige;
+    width: 100%;
+    text-align: center;
+}
+
+.dropbtn {
+    background-color: lightblue;
+    padding: 30px 95px;
     position: absolute;
     display: inline-block;
     top: 0;
     left: 0
 }
-
-.dropbtn {
-    cursor: pointer;
-    border: none;
-    background-color: lightblue;
-    padding: 31px 95px
-}
-
-.sidenav-links {
-    display: none;
-    position: absolute
-}
-
-.sidenav-links a {
-    display: block;
-    color: black;
-    background-color: lightblue;
-    padding: 30px 105px
-}
-
-.sidenav-links a:hover {background-color: yellow}
-
-.dropdown:hover .sidenav-links {display: block}
 
 #title {
     text-align: center;
@@ -47,6 +29,31 @@
 #title a {
     padding: 30px 115px;
     background-color: lightgreen;
+}
+
+#sidenav-links {
+    background-color: darkslateblue;
+    position: absolute;
+    width: 275px;
+    left: 0;
+    top: 80px
+}
+
+#sidenav-links ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+#sidenav-links li {
+    padding: 10px
+}
+
+#sidenav-links a {
+    background-color: darkorchid;
+    padding: 10px 60px;
+    display: inline-block
 }
 
 .home-page-text {
