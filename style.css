@@ -1,5 +1,7 @@
 body {
-    background-color: dodgerblue;
+    background-color: #EAE7DC;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px
 }
 
 .topnav-foundation {
@@ -7,37 +9,51 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%
+    width: 100%;
+    height: 45px;
+    background-color: #D8C3A5;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px #8E8D8A;
 }
 
 #topnav {
-    background-color: beige;
     width: 100%;
     text-align: center;
+    font-size: 35px;
 }
 
 #dropbtn {
-    background-color: lightblue;
-    padding: 30px 95px;
     position: absolute;
     display: inline-block;
     top: 0;
     left: 0;
-    width: 100px
+    cursor: pointer;
+    height: 45px;
+    width: 275px;
+    padding: 10px 0
 }
 
 #title {
     text-align: center;
-    padding: 30px 115px
+    height: 45px;
+    padding: 10px 0;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -150px;
+    margin-top: -10px
 }
 
 #title a {
-    padding: 30px 115px;
-    background-color: lightgreen;
+    text-decoration: none;
+    width: 300px;
+    height: 45px;
+    display: inline-block;
+    padding: 10px 0
 }
 
 #sidenav-links {
-    background-color: darkslateblue;
+    background-color: #D8C3A5;
     position: absolute;
     width: 275px;
     left: 0;
@@ -46,63 +62,67 @@ body {
     transform: translateX(-100%);
     transition: transform 800ms;
     z-index: -9;
+    box-shadow: 2px 0 5px #8E8D8A
 }
 
 #sidenav-links ul {
     list-style: none;
-    padding: 0;
     text-align: center;
-    margin: 0;
     position: absolute;
     top: 80px;
-    left: 0
+    left: 0;
+    padding-left: 0;
+    margin: 0;
+    width: 275px
 }
 
 #sidenav-links li {
-    padding: 10px 0px
+    font-size: 35px;
+    padding: 10px 0;
 }
 
 #sidenav-links a {
-    background-color: darkorchid;
-    padding: 10px 0;
     display: inline-block;
+    text-decoration: none;
     width: 275px
+}
+
+a {
+    color: black;
 }
 
 .home-page-text {
     display: flex;
-    width: 1000px;
-    text-align: center;
+    width: 830px;
+    text-align: left;
     justify-content: center;
-    align-items: center;
-    border: 3px solid black;
+    align-items: left;
     flex-direction: column;
     position: absolute;
-    top: 40%;
-    left: 50%;
-    margin-left: -500px;
-    z-index: -10;
-    transform: translateX(0);
-    transition: transform 800ms;
+    top: 25%;
+    padding-left: 50px;
 }
 
 #home-page-title {
-    width: 750px;
-    border: 3px solid black;
+    width: 800px;
     margin: 3px;
-    padding: 30px
+    padding: 8px;
+    font-size: 150px;
+    color: #E85A4F;
 }
 
 #home-page-subtitle-1 {
     width: 750px;
-    border: 3px solid black;
     margin: 3px;
-    padding: 15px
+    padding: 5px 20px;
+    font-size: 25px;
+    color: black
 }
 
 #home-page-subtitle-2 {
     width: 750px;
-    border: 3px solid black;
     margin: 3px;
-    padding: 15px
+    padding: 5px 20px;
+    font-size: 25px;
+    color: black
 }
