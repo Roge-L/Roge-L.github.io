@@ -5,25 +5,39 @@
         <title>Roger Lam</title>
         <link rel='stylesheet' href='style.css'>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-        <div class='home-page-text'>
-            <h1 id='home-page-title'>Roger Lam</h1>
-            <h3 id='home-page-subtitle-1'>Student at the University of Toronto</h3>
-            <h4 id='home-page-subtitle-2'>Computer Science, Statistics, and Economics</h4>
-        </div>
+    </head>
+
+    <body data-barba='wrapper'>
+        <main data-barba='container' data-barba-namespace='welcome'>
+            <div class='home-page-text'>
+                <h1 id='home-page-title'>Roger Lam</h1>
+                <h3 id='home-page-subtitle-1'>Student at the University of Toronto</h3>
+                <h4 id='home-page-subtitle-2'>Computer Science, Statistics, and Economics</h4>
+            </div>
+            <a href='profile.html'>LINK</a>
+        </main>
     </body>
 
-    <script>
-        setTimeout(() => {
-            document.addEventListener('click', () => {
-                window.location.href = 'profile.html'
-            })
-        }, 2000)
-    </script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+    <script src="https://unpkg.com/@barba/core"></script>
     <script>
+        barba.init({
+          transitions: [{
+              name: 'opacity-transition',
+              leave(data) {
+                console.log('working');
+              },
+              enter(data) {
+                console.log('working')
+              }
+          }]
+        })
+
         var tl = gsap.timeline();
+
         tl.from('#home-page-title', {duration: 1, y: -30, opacity: 0});
         tl.from('#home-page-subtitle-1', {duration: 0.5, y: 10, opacity: 0});
         tl.from('#home-page-subtitle-2', {duration: 0.5, y: 10, opacity: 0})
-    </script>
+
+      </script>
 </html>
