@@ -1,5 +1,3 @@
-import barba from '../node_modules/@barba/core';
-
 const navToggle = document.getElementById('dropbtn')
 let sidenavOpen = false
 
