@@ -1,4 +1,4 @@
-import barba from 'node_modules/@barba/core';
+import barba from '../node_modules/@barba/core';
 
 barba.init({
     transitions: [{
