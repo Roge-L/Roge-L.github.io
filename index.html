@@ -25,4 +25,19 @@
     <script type='javascript' src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7"></script>
     
     <script src='js/index.js'></script>
+
+    <script>
+        barba.init({
+    transitions: [{
+        name: 'opacity-transition',
+        leave(data) {
+          console.log('working');
+        },
+        enter(data) {
+          console.log('working')
+        }
+    }]
+  })
+
+    </script>
 </html>
