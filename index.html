@@ -22,12 +22,8 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
 
     <!-- jsdelivr BarbaJS -->
-    <script type='javascript' src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7"></script>
-    
-    <script src='js/index.js'></script>
-
-    <script>
-        barba.init({
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7">
+            barba.init({
     transitions: [{
         name: 'opacity-transition',
         leave(data) {
@@ -37,7 +33,7 @@
           console.log('working')
         }
     }]
-  })
-
-    </script>
+  })</script>
+    
+    <script src='js/index.js'></script>
 </html>
