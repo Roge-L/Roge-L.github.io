@@ -16,7 +16,5 @@
     "url": "https://github.com/Roge-L/roge-l.github.io/issues"
   },
   "homepage": "https://github.com/Roge-L/roge-l.github.io#readme",
-  "dependencies": {
-    "@barba/core": "^2.9.7"
-  }
+  "dependencies": {}
 }
