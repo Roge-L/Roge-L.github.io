@@ -21,19 +21,22 @@
     <!-- cdn GSAP -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
 
-    <!-- jsdelivr BarbaJS -->
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7">
-            barba.init({
-    transitions: [{
-        name: 'opacity-transition',
-        leave(data) {
-          console.log('working');
-        },
-        enter(data) {
-          console.log('working')
-        }
-    }]
-  })</script>
+    <!-- unpkg -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    
+    <script>
+        barba.init({
+            transitions: [{
+                name: 'opacity-transition',
+                leave(data) {
+                    console.log('working')
+                },
+                enter(data) {
+                    console.log('working')
+                }
+            }]
+        })
+    </script>
     
     <script src='js/index.js'></script>
 </html>
