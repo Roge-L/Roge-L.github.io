@@ -1,7 +1,7 @@
 body {
     background-color: #EAE7DC;
     font-family: 'Raleway', sans-serif;
-    letter-spacing: 2px
+    letter-spacing: 0.5px
 }
 
 .topnav-foundation {
@@ -33,6 +33,7 @@ body {
     padding: 10px 0
 }
 
+/* name in the middle of the top bar*/
 #title {
     text-align: center;
     height: 45px;
@@ -124,4 +125,23 @@ a {
     padding: 5px 20px;
     font-size: 25px;
     color: black
+}
+
+#profile-text {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    border-style: solid;
+    width: 50%;
+    height: 55%;
+    font-size: 25px;
+}
+
+#profile-pic-1 {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    border-style: solid;
+    width: 480px;
+    height: 100%
 }
