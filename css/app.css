@@ -27,6 +27,10 @@ a:hover {
     color: #F0F2F2;
 }
 
+a:focus {
+    color: #F0F2F2;
+}
+
 .top-bar {
     position: relative;
     z-index: 999;
@@ -49,16 +53,6 @@ a:hover {
     padding: 20px 0px;
 }
 
-.card {
-    margin: 0.5rem 2rem;
-    transition: box-shadow 0.5s;
-}
-
-.card:hover {
-    box-shadow: 0 0 50px;
-    cursor: pointer;
-}
-
 @media screen and (max-width: 39.9375em) {
     .off-canvas {
         top: 64px;
@@ -70,6 +64,9 @@ a:hover {
     .off-canvas-content {
         padding: 24px 0px;
     }
+    .top-bar-right {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 40em) {
@@ -80,4 +77,8 @@ a:hover {
 
 .project {
     margin-top: 1rem;
+}
+
+.menu li:hover {
+    background-color: #454948;
 }
