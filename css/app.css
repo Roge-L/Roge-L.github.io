@@ -82,3 +82,15 @@ a:focus {
 .menu li:hover {
     background-color: #454948;
 }
+
+/* Style all font awesome icons */
+.fab {
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fab:hover {
+    opacity: 0.7;
+  }
